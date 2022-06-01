@@ -28,7 +28,7 @@ def gfg():
         form_data = request.form
 
         input1 = form_data.get("level")
-        Xnew = [[input1,0,0,0,0]]
+        Xnew = [[0,0,0,0,input1]]
         result = regressor.predict(Xnew)
         value = result.tolist()
 
